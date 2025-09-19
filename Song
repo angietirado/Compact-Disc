@@ -1,0 +1,38 @@
+/**
+ * The Song Class
+ * This program will allow the song title and artist to pass through as arguments to then be displayed
+ * 
+ * The Programming Lab Chapter 7
+ * @author Angie Tirado, James Reice
+ * @since 2/7/24
+ * @version 1.0
+ */
+
+/*
+ *This class stores data about a song.
+ */
+public class Song{
+    private String title; // The song's title
+    private String artist; // The song's artist
+    /**
+    *Constructor
+    *@param title A reference to a String object
+    *containing the song's title.
+    *@param artist A reference to a String object
+    *containing the song's artist.
+    */
+    public Song(String title, String artist){
+        //calls the songs title
+        this.title = title;
+        //calls the songs artist
+        this.artist = artist;
+    }
+    /**
+    *The toString method
+    *@return A String object containing the name of the song and the artist.
+    */
+    public String toString(){
+        //returns the display which includes the artist and the title
+        return title + " by " + artist + "\n";
+    }
+}
